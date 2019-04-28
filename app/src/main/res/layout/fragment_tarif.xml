@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tarif Adı"
+                android:id="@+id/edtTarifAdi"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Malzemeler"
+                android:id="@+id/edtMalzemeler"
+                android:layout_below="@id/edtTarifAdi"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yapılışı"
+                android:id="@+id/edtTarifYapilisi"
+                android:layout_below="@id/edtMalzemeler"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTarifYapilisi"
+                android:text="KAYDET"
+                android:id="@+id/btnSave"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
